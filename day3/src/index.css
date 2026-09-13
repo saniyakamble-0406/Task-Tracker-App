@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.message {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.counter {
+  margin: 20px auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter span {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.buttons button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #1d4ed8;
+}
+
+.info {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.info p {
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+.info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .card h1 {
+    font-size: 30px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+}
